@@ -45,9 +45,8 @@ static const void *GAAlertViewBlockKey = &GAAlertViewBlockKey;
 
 + (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
   GAAlertViewTapBlock tapBlock = objc_getAssociatedObject(alertView, GAAlertViewBlockKey);
-  __weak __typeof(alertView)weakAlertView = alertView;
   if(tapBlock) {
-    tapBlock(weakAlertView,buttonIndex);
+    tapBlock(alertView,buttonIndex);
   }
   objc_setAssociatedObject(alertView, GAAlertViewBlockKey, nil, OBJC_ASSOCIATION_ASSIGN);
 }
