@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "GAAlertCenter"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "GAAlertCenter of your bese choice."
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ You feel this is amazing.You will love it.
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/GikkiAres/GAAlertCenter.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/GikkiAres/GAAlertCenter.git", :tag => "0.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
